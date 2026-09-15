@@ -1,4 +1,3 @@
-
 // Changed 'x' to 'count' and initialized it with a meaningful default value.
 let count = 0;
 

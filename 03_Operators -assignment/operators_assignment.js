@@ -68,24 +68,24 @@ console.log("Total production =", totalBottles);
 let rows = 7;
 let plantsPerRow = 15;
 
-let totalPlants = rows * plantsPerRow;
+let Plants = rows * plantsPerRow;
 
-console.log("Total plants =", totalPlants);
+console.log("Total plants =", Plants);
 
 //Division 
 // q1 A teacher distributes 144 pencils equally among 12 students. Find the number of pencils each student receives
 let pencils = 144;
-let students = 12;
+let Students = 12;
 
-let eachStudent = pencils / students;
+let eachStudent = pencils / Students;
 
 console.log("Pencils each student receives =", eachStudent);
 
 //q2 A train travels 360 kilometres in 6 hours. Find its average distance travelled per hour
-let distance = 360;
+let Distance = 360;
 let time = 6;
 
-let average = distance / time;
+let average = Distance / time;
 
 console.log("Average distance per hour =", average, "km");
 
@@ -121,9 +121,9 @@ console.log(n % 2 == 0 ? "Even number" : "Odd number");
 
 // Exponentiation
 // q1 Find the volume of a cube with a side length of 6 cm using side ** 3.
-let side = 6;
+let Side = 6;
 
-let volume = side ** 3;
+let volume = Side ** 3;
 
 console.log("Volume of cube =", volume, "cm³");
 
@@ -140,3 +140,173 @@ let sides = 9;
 let totalCells = sides ** 2;
 
 console.log("Total number of cells =", totalCells);
+
+//simple Assignment
+
+//q1
+let age = 18
+console.log(age)
+//q2
+let penPrice = 15;
+console.log(penPrice);
+//q3
+let daysInWeek = 7;
+console.log(daysInWeek);
+//q4
+let city = "Ahmedabad";
+console.log(city);
+// q5
+const pi = 3.14159;
+console.log(pi)
+
+// Add and assign
+//q1
+let Marks = 200;
+Marks += 35;
+
+console.log(Marks);
+
+//q2
+let balance = 5000;
+balance += 1200;
+
+console.log(balance);
+//q3
+let battery = 45;
+battery += 30;
+
+console.log(battery);
+//q4
+let score = 1250;
+score += 375;
+
+console.log(score);
+//q5
+let books = 840;
+books += 160;
+
+console.log(books);
+
+// subtract and assign
+//q1
+let totalWater = 1000;
+let usedWater = 375;
+totalWater -= usedWater;
+console.log("remainning water is",totalWater + " litres");
+//q2
+let totalBalance = 500;
+let spendMoney = 180;
+totalBalance -= spendMoney;
+console.log("remainning money  is ",totalBalance + " rs");
+//q3
+let batteryUsed = 90;
+battery -= 45;
+
+console.log(batteryUsed);
+
+//q4
+let boxes = 2400;
+boxes -= 950;
+
+console.log(boxes);
+//q5
+let totalScore = 2000;
+totalScore -= 625;
+
+console.log(score);
+
+// multiply and assign
+//q1
+let population = 5000;
+population *= 3;
+
+console.log(population);
+//q2
+let production = 120;
+production *= 4;
+
+console.log(production);
+//q3
+let savings = 2000;
+savings *= 2;
+
+console.log(savings);
+//q4
+let totalPlants = 50;
+totalPlants *= 5;
+console.log(totalPlants)
+
+//q5
+let gameScore = 150;
+gameScore *= 3;
+
+console.log(gameScore);
+
+// divide and assign
+//q1
+let cloth = 1200;
+cloth /= 4;
+
+console.log(cloth);
+//q2
+let budget = 80000;
+budget /= 8;
+
+console.log(budget);
+//q3
+let sugar = 960;
+sugar /= 6;
+
+console.log(sugar);
+//q4
+let distance = 450;
+distance /= 5;
+
+console.log(distance);
+//q5
+let totalMarks = 2500;
+totalMarks /= 10;
+
+console.log(totalMarks);
+
+//Modulus and assign
+//q1
+let totalCandies = 137;
+totalCandies %= 10;
+console.log(totalCandies);
+//q2
+let students = 250;
+students %= 7;
+
+console.log(students);
+//q3
+let days = 1000;
+days %= 7;
+
+console.log(days);
+//q4
+let chairs = 89;
+chairs %= 5;
+
+console.log(chairs);
+//q5
+let months = 365;
+months %= 12;
+
+console.log(months);
+
+// exponentiation and assign
+//q1
+let side = 10;
+side **= 2;
+
+console.log(side);
+//q2
+let edge = 4;
+edge **= 3;
+console.log(edge)
+//q3
+let factor = 3;
+factor **= 2;
+
+console.log(factor);
