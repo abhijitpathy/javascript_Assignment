@@ -310,3 +310,215 @@ let factor = 3;
 factor **= 2;
 
 console.log(factor);
+
+// comparision & relation operators
+//Loose equality ==
+//q1
+let storedPassword = 1234;
+let userPassword = "1234";
+
+console.log(storedPassword == userPassword);
+//q2
+let userAnswer = 0;
+let defaultAnswer = false;
+
+console.log(userAnswer == defaultAnswer);
+//q3
+let userInput = "";
+let submitted = false;
+
+console.log(userInput == submitted);
+//q4
+let backend = null;
+let frontend = undefined;
+
+console.log(backend == frontend);
+//q5
+let score1 = 500;
+let score2 = "500";
+
+console.log(score1 == score2);
+
+// loose equality =!
+//q1
+let code1 = "SAVE10";
+let code2 = "SAVE20";
+
+console.log(code1 != code2);
+//q2
+let userRole = "admin";
+let defaultRole = "guest";
+
+console.log(userRole != defaultRole);
+//q3
+let correctAnswer = 42;
+let Answer = "40";
+
+console.log(correctAnswer != Answer);
+//q4
+let email = "";
+let emptyFlag = false;
+
+console.log(email != emptyFlag);
+//q5
+let userId = null;
+let validId = 101;
+
+console.log(userId != validId);
+
+// strict Equality ===
+//q1
+let passStored = 1234;
+let passEntered = "1234"; 
+console.log(passStored === passEntered);
+//q2
+let acctNumA = 1234567890;  
+let acctNumB = 1234567890; 
+console.log(acctNumA === acctNumB);
+//q3
+let flagStatus = true;
+let stateValue = 1;
+
+console.log(flagStatus === stateValue);
+//q4
+let dbEntry = null; 
+let cacheEntry = undefined; 
+console.log(dbEntry === cacheEntry);
+
+//q5
+let marksA = 85; 
+let marksB = 85; 
+console.log(marksA === marksB);
+
+// strict inequality !==
+//q1
+let textId = "101";
+let numericId = 101;
+
+console.log(textId !== numericId);
+//q2
+let boolStatus = true;
+let numberStatus = 1;
+
+console.log(boolStatus !== numberStatus);
+//q3
+let mainPass = "abc123";
+let verifyPass = "abc124";
+
+console.log(mainPass !== verifyPass);
+//q4
+let serverInfo = null;
+let localInfo = undefined;
+
+console.log(serverInfo !== localInfo);
+//q5
+let playerOne = 10;
+let playerTwo = 20;
+
+console.log(playerOne !== playerTwo);
+
+// Greater Than >
+//q1
+let personAge = 20;
+let legalAge = 18; 
+console.log(personAge >= legalAge);
+//q2
+let orderAmount = 650; 
+let shippingLimit = 500; 
+console.log(orderAmount >= shippingLimit);
+//q3
+let Score = 1200; 
+let unlockScore = 1000; 
+console.log(Score >= unlockScore);
+//q4
+let salaryAmount = 40000; 
+let incomeRequirement = 30000; 
+console.log(salaryAmount >= incomeRequirement);
+//q5
+let dailySteps = 11000; 
+let stepGoal = 10000; 
+console.log(dailySteps >= stepGoal);
+
+// less than <
+//q1
+let studentMarks = 30;
+let failMarks = 35;
+
+console.log(studentMarks < failMarks);
+//q2
+let totalExpenses = 8000;
+let spendingLimit = 10000;
+
+console.log(totalExpenses < spendingLimit);
+//q3
+let stockCount = 7;
+let stockLimit = 10;
+
+console.log(stockCount < stockLimit);
+//q4
+let vehicleSpeed = 40;
+let speedMinimum = 50;
+
+console.log(vehicleSpeed < speedMinimum);
+//q5
+let timeLeft = 4;
+let warningTime = 5;
+
+console.log(timeLeft < warningTime);
+
+// Greater Than or Equal >=
+//q1
+let voterAge = 18;
+let votingRequirement = 18;
+
+console.log(voterAge >= votingRequirement);
+//q2
+let studentPercentage = 75;
+let scholarshipMinimum = 75;
+
+console.log(studentPercentage >= scholarshipMinimum);
+//q3
+let subscriberAge = 14;
+let ageRequirement = 13;
+
+console.log(subscriberAge >= ageRequirement);
+//q4
+let currentPoints = 500;
+let pointsNeeded = 500;
+
+console.log(currentPoints >= pointsNeeded);
+//q5
+let workExperience = 3;
+let experienceNeeded = 2;
+
+console.log(workExperience >= experienceNeeded);
+
+// less  than or equal <=
+//q1
+let liftPeople = 7;
+let liftCapacity = 8;
+
+console.log(liftPeople + 1 <= liftCapacity);
+//q2
+let uploadSize = 5;
+let fileLimit = 5;
+
+console.log(uploadSize <= fileLimit);
+//q3
+let juniorAge = 12;
+let juniorAgeLimit = 12;
+
+console.log(juniorAge <= juniorAgeLimit);
+//q4
+let usedData = 9.5;
+let dataLimit = 10;
+
+console.log(usedData <= dataLimit);
+//q5
+let classStudents = 40;
+let classLimit = 40;
+
+console.log(classStudents <= classLimit);
+
+
+
