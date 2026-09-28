@@ -930,8 +930,8 @@ falsetrue
 // q13
 5
 NaN
-null5
-undefined5
+null
+undefined
 // q14
 ""
 "[object Object]"
