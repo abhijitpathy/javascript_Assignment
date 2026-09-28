@@ -556,18 +556,39 @@ console.log(isWeekend && isHoliday);
 
 
 //q6
+// let a = 0;
+// let b = 10;
+// let result = a && b;
+// console.log(result);
 //10
 
 //q7
+// let x = 5;
+// let y = 10;
+// let result = (x > 3 && y) || 0;
+// console.log(result);
 //""
 
 //q8
+// let p = "Hello";
+// let q = "";
+// let r = "World";
+// let result = p && q && r;
+// console.log(result);
 //0
 
 //q9
+// let val = 5;
+// let condition = val && (val = 0);
+// console.log(condition);
+// console.log(val);
 //0
 
 //q10
+// let x = 10;
+// let y = 20;
+// let result = (x && y) && (x > y);
+// console.log(result);
 //false
 
 
@@ -606,18 +627,38 @@ let timeBonus = true;
 console.log($score > 1000 || timeBonus);
 
 //q6
+// let a = 0;
+// let b = false;
+// let c = "";
+// let d = null;
+// let e = 42;
+// let result = a || b || c || d || e;
+// console.log(result);
 //42
 
 //q7
+// let x = "Hello" || 0;
+// let y = 0 || "Hi";
+// console.log(x, y);
 //Hello Hi
 
 //q8
+// let a = 10;
+// let b = 20;
+// let result = (a < 5) || (b > 15);
+// console.log(result);
 //true
 
 //q9
+// let val = 5;
+// let condition = val || (val = 0);
+// console.log(condition);
+// console.log(val);
 //5 5
 
 //q10
+// let x = "" || 0 || false || null || undefined || "OK";
+// console.log(x);
 //ok
 
 // logical NOT !
@@ -652,11 +693,34 @@ console.log(!isReadOnly);
 
 
 
-//q6 true, false
-//q7 false, true
-//q8 false
-//q9 false
-//q10 false
+//q6
+// let a = 0;
+// let b = 1;
+// console.log(!a, !b);
+//  true, false
+
+//q7
+// let x = "Hello";
+// let y = "";
+// console.log(!x, !y);
+//  false, true
+//q8 
+// let val = 5;
+// let result = !val;
+// console.log(result);
+// false
+//q9 
+// let a = 10;
+// let b = 20;
+// let result = !(a && b);
+// console.log(result);
+// false
+//q10
+// let x = 0;
+// let y = 1;
+// let result = !(x || y);
+// console.log(result);
+//  false
 
 
 // Mixed LOgical operators
@@ -732,6 +796,7 @@ console.log(result$);
 // true
 
 //q10
+
 let val1 = false;
 let val2 = true;
 let val3 = false;
@@ -794,11 +859,36 @@ points--;
 console.log(points);
 
 // part c
-// q11 12 10 12
-// q12 5 10
-// q13 7 13
-// q14 5 13
-// q15 2
+// q11
+// let x = 10;
+// let y = x++;
+// let z = ++x;
+// console.log(x, y, z);
+//  12 10 12
+
+// q12
+// let a = 5;
+// let b = a-- + ++a;
+// console.log(a, b);
+//  5 10
+
+// q13 
+// // let m = 7;
+// let n = --m + m++;
+// console.log(m, n);
+// 7 13
+
+// q14
+// let p = 3;
+// let q = p++ + ++p + p;
+// console.log(p, q);
+//  5 13
+
+// q15
+// let val = 0;
+// val = val++ + ++val;
+// console.log(val);
+//  2
 
 //  Part f :typeof operator
 // q1
@@ -817,19 +907,35 @@ console.log(typeof cit$y);
 console.log(typeof null);
 
 // q6.
+// console.log(typeof 42);
+// console.log(typeof "Hello");
+// console.log(typeof true);
+// console.log(typeof undefined);
 number
 string
 boolean
 undefined
 //Q7.
+// console.log(typeof null);
+// console.log(typeof {});
+// console.log(typeof []);
 object
 object
 object
 // q8.
+// console.log(typeof NaN);
+// console.log(typeof Infinity);
+// console.log(typeof function(){});
 number
 number
 functioN
 // q9.
+// Create three variables:
+
+// price = 99.99
+// message = "Welcome"
+// isActive = false
+// Print the type of each variable with a clear message
 let pr$ice = 99.99;
 let message = "Welcome";
 let isA$ctive = false;
@@ -839,29 +945,51 @@ console.log("message:", typeof message);
 console.log("isActive:", typeof isA$ctive);
 
 // q10.
+// let value = null;
+// console.log(typeof value);
+// console.log(typeof value === "object");
 object
 true
 
 // q11.
+// console.log(typeof typeof 100);
+// console.log(typeof typeof "Hi");
+// console.log(typeof typeof true);
 string
 string
 string
 
 // q12.
+// let a = 10;
+// let b = "10";
+// console.log(typeof a === typeof b);
+// console.log(typeof a == typeof b);
 false
 false
 
 // q13.
+// console.log(typeof null === "object");
+// console.log(typeof [] === "object");
+// console.log(typeof {} === "object");
 true
 true
 true
 
 // q14.
+// let x;
+// console.log(typeof x);
+// x = null;
+// console.log(typeof x);
+// x = 0;
+// console.log(typeof x);
 undefined
 object
 number
 
 // q15.
+// console.log(typeof NaN === "number");
+// console.log(typeof Infinity === "number");
+// console.log(typeof (1 / 0));
 true
 true
 number
@@ -886,16 +1014,30 @@ console.log(num * 2);
 
 
 // q6
+// console.log("10" - 5);
+// console.log("10" + 5);
+// console.log("10" * 2);
+// console.log("10" / 2);
 5
 105
 20
 5
 // q7
+// console.log("5" - "2");
+// console.log("5" + "2");
+// console.log("5" * "2");
+// console.log("5" / "2");
 3
 52
 10
 2.5
 // q8
+// console.log(Number("123"));
+// console.log(Number("123abc"));
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(null));
+// console.log(Number(undefined));
 123
 NaN
 1
@@ -903,6 +1045,12 @@ NaN
 0
 NaN
 // q9
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean("0"));
+// console.log(Boolean([]));
+// console.log(Boolean({}));
+// console.log(Boolean(null));
 false
 false
 true
@@ -910,6 +1058,11 @@ true
 true
 false
 // q10
+// console.log(String(100));
+// console.log(String(true));
+// console.log(String(null));
+// console.log(String(undefined));
+// console.log(100 + "");
 100
 true
 null
@@ -918,30 +1071,63 @@ undefined
 
 // part c
 // q11.
+// console.log("5" + 3 + 2);
+// console.log(5 + 3 + "2");
+// console.log("5" - 3 + 2);
+// console.log(5 - "3" + "2");
 532
 82
 4
 22
 // q12
+// console.log(true + true);
+// console.log(true + false);
+// console.log(true + "false");
+// console.log(false + "true");
 2
 1
 truefalse
 falsetrue
 // q13
+// console.log(null + 5);
+// console.log(undefined + 5);
+// console.log(null + "5");
+// console.log(undefined + "5");
 5
 NaN
 null
 undefined
 // q14
+// console.log([] + []);
+// console.log([] + {});
+// console.log({} + []);
+// console.log({} + {});
 ""
 "[object Object]"
 "[object Object]"
 "[object Object][object Object]"
 // q15.
+// let a = "10";
+// let b = 5;
+// let c = a + b;
+// let d = a - b;
+// let e = +a + b;
+// console.log(c, typeof c);
+// console.log(d, typeof d);
+// console.log(e, typeof e);
 // 105 string
 // 5 number
 // 15 number
+
+
 // q16.
+
+// console.log(!!"Hello");
+// console.log(!!"");
+// console.log(!!0);
+// console.log(!!1);
+// console.log(!!null);
+// console.log(!!undefined);
 true
 false
 false
@@ -949,12 +1135,24 @@ true
 false
 false
 // q17
+// console.log(Number(""));
+// console.log(Number(" "));
+// console.log(Number("0"));
+// console.log(Number("  25  "));
+// console.log(Number("25px"));
 0
 0
 0
 25
 NaN
 // q18
+// let val1 = "5";
+// let val2 = 2;
+// console.log(val1 + val2);
+// console.log(+val1 + val2);
+// console.log(val1 - val2);
+// console.log(val1 * val2);
+// console.log(val1 / val2);
 52
 7
 3
@@ -967,15 +1165,36 @@ number
 6
 number
 7
+
+//q20
+// let x = "10";
+// let y = ++x;
+// console.log(x, y, typeof x, typeof y);
 // 11 11 number number
-// q20
-// q21 6 5 number number
+
+
+// q21 
+// let a = "5";
+// let b = a++;
+// console.log(a, b, typeof a, typeof b);
+// 6 5 number number
 
 // q22 string
+// console.log(typeof (1 + "2"));
+// console.log(typeof (1 - "2"));
+// console.log(typeof (1 * "2"));
+// console.log(typeof (1 / "2"));
 number
 number
 number
 // q23
+// let val = null;
+// console.log(typeof val);
+// console.log(val + 1);
+// console.log(val - 1);
+// console.log(val * 1);
+// console.log(Boolean(val));
+
 object
 1
 -1
