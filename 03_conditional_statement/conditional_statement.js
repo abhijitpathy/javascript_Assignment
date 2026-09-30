@@ -416,11 +416,11 @@ if (a$ge >= 21 && age <= 30) {
 // q10
 let present = prompt("Is the student present? (yes/no)");
 let internal = Number(prompt("Enter internal marks:"));
-let external = Number(prompt("Enter external marks:"));
+let exit = Number(prompt("Enter external marks:"));
 
 if (present == "yes") {
     if (internal >= 30) {
-        if (external >= 35) {
+        if (exit >= 35) {
             console.log("Eligible for Final Exam");
         } else {
             console.log("External marks are less than 35");
