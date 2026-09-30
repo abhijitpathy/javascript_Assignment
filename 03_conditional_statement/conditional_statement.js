@@ -135,3 +135,301 @@ if (numb >= 0) {
 } else {
     console.log("Negative");
 }
+
+// C] if...else if...else Statement
+// q1
+let month = Number(prompt("Enter month number:"));
+
+if (month == 12 || month == 1 || month == 2) {
+    console.log("Winter");
+} else if (month == 3 || month == 4 || month == 5) {
+    console.log("Summer");
+} else if (month == 6 || month == 7 || month == 8) {
+    console.log("Monsoon");
+} else if (month == 9 || month == 10 || month == 11) {
+    console.log("Autumn");
+} else {
+    console.log("Invalid month");
+}
+// q2
+let income = Number(prompt("Enter your income:"));
+let tax;
+
+if (income < 300000) {
+    tax = 0;
+} else if (income <= 700000) {
+    tax = income * 0.05;
+} else if (income <= 1000000) {
+    tax = income * 0.10;
+} else {
+    tax = income * 0.15;
+}
+
+console.log("Tax amount:", tax);
+
+// q3
+let sco$re = Number(prompt("Enter score:"));
+
+if (sco$re >= 90) {
+    console.log("Outstanding");
+} else if (sco$re >= 70) {
+    console.log("Good");
+} else if (sco$re >= 40) {
+    console.log("Average");
+} else {
+    console.log("Needs Improvement");
+}
+
+// q4
+let speed = Number(prompt("Enter speed:"));
+
+if (speed < 40) {
+    console.log("Slow");
+} else if (speed <= 80) {
+    console.log("Normal");
+} else {
+    console.log("Fast");
+}
+// q5
+let height = Number(prompt("Enter height in cm:"));
+
+if (height < 150) {
+    console.log("Short");
+} else if (height <= 170) {
+    console.log("Average");
+} else {
+    console.log("Tall");
+}
+
+// q6
+let day = Number(prompt("Enter day number:"));
+
+if (day >= 1 && day <= 5) {
+    console.log("Weekday");
+} else if (day == 6 || day == 7) {
+    console.log("Weekend");
+} else {
+    console.log("Invalid day");
+}
+
+// q7
+let units = Number(prompt("Enter units:"));
+let bill;
+
+if (units <= 50) {
+    bill = units * 2;
+} else if (units <= 150) {
+    bill = units * 4;
+} else {
+    bill = units * 6;
+}
+
+console.log("Total bill:", bill);
+
+// q8
+let attendance = Number(prompt("Enter attendance percentage:"));
+
+if (attendance >= 90) {
+    console.log("Excellent");
+} else if (attendance >= 75) {
+    console.log("Good");
+} else if (attendance >= 50) {
+    console.log("Satisfactory");
+} else {
+    console.log("Poor");
+}
+
+// q9
+let mark1 = Number(prompt("Enter first mark:"));
+let mark2 = Number(prompt("Enter second mark:"));
+let mark3 = Number(prompt("Enter third mark:"));
+
+if (mark1 >= mark2 && mark1 >= mark3) {
+    console.log(mark1);
+} else if (mark2 >= mark1 && mark2 >= mark3) {
+    console.log(mark2);
+} else {
+    console.log(mark3);
+}
+
+// q10
+let num$ = Number(prompt("Enter a number:"));
+
+if (num$ == 0) {
+    console.log("Zero");
+} else if (num$ > 0) {
+    if (num$ % 2 == 0) {
+        console.log("Positive Even");
+    } else {
+        console.log("Positive Odd");
+    }
+} else {
+    if (num$ % 2 == 0) {
+        console.log("Negative Even");
+    } else {
+        console.log("Negative Odd");
+    }
+}
+
+// D. Nested if Statement
+// q1
+let n$um = Number(prompt("Enter a number:"));
+
+if (n$um > 10) {
+    if (n$um % 3 == 0) {
+        console.log("Greater than 10 and divisible by 3");
+    } else {
+        console.log("Greater than 10 but not divisible by 3");
+    }
+} else {
+    console.log("Number is not greater than 10");
+}
+
+// q2
+let ag$e = Number(prompt("Enter your age:"));
+let voterID = prompt("Do you have voter ID? (yes/no)");
+
+if (ag$e >= 18) {
+    if (voterID == "yes") {
+        console.log("Can Vote");
+    } else {
+        console.log("No voter ID");
+    }
+} else {
+    console.log("Not 18 or older");
+}
+
+// q3
+let ma$rks = Number(prompt("Enter marks:"));
+
+if (ma$rks >= 40) {
+    if (ma$rks >= 80) {
+        console.log("Passed with Distinction");
+    } else {
+        console.log("Passed");
+    }
+} else {
+    console.log("Failed");
+}
+// q4
+let mark$s = Number(prompt("Enter marks:"));
+
+if (mark$s >= 40) {
+    if (mark$s >= 80) {
+        console.log("Passed with Distinction");
+    } else {
+        console.log("Passed");
+    }
+} else {
+    console.log("Failed");
+}
+
+// q5
+let yea$r = Number(prompt("Enter year:"));
+
+if (yea$r % 4 == 0) {
+    if (yea$r % 100 == 0) {
+        if (yea$r % 400 == 0) {
+            console.log("Leap Year");
+        } else {
+            console.log("Not a Leap Year");
+        }
+    } else {
+        console.log("Leap Year");
+    }
+} else {
+    console.log("Not a Leap Year");
+}
+
+// q6
+let email = prompt("Enter email:");
+
+if (email.includes("@")) {
+    if (email.endsWith(".com")) {
+        if (email.length > 10) {
+            console.log("Valid Email");
+        } else {
+            console.log("Email length is too short");
+        }
+    } else {
+        console.log("Email must end with .com");
+    }
+} else {
+    console.log("Email must contain @");
+}
+// q7
+let total = Number(prompt("Enter cart total:"));
+let premium = prompt("Are you a premium member? (yes/no)");
+let discount;
+let finalAmount;
+
+if (total >= 1000) {
+    if (premium == "yes") {
+        discount = total * 0.20;
+        finalAmount = total - discount;
+    } else {
+        discount = total * 0.10;
+        finalAmount = total - discount;
+    }
+} else {
+    finalAmount = total;
+}
+
+console.log("Final amount:", finalAmount);
+
+// q8
+let $num = Number(prompt("Enter a number:"));
+
+if ($num > 0) {
+    if ($num % 2 == 0) {
+        if ($num % 4 == 0) {
+            console.log("Positive Even and Divisible by 4");
+        } else {
+            console.log("Positive Even but not divisible by 4");
+        }
+    } else {
+        console.log("Positive Odd");
+    }
+} else {
+    console.log("Not positive");
+}
+
+// q9
+let a$ge = Number(prompt("Enter age:"));
+let degree = prompt("Do you have a graduation degree? (yes/no)");
+let experience = Number(prompt("Enter years of experience:"));
+
+if (a$ge >= 21 && age <= 30) {
+    if (degree == "yes") {
+        if (experience >= 2) {
+            console.log("Eligible for Interview");
+        } else {
+            console.log("Not enough experience");
+        }
+    } else {
+        console.log("Graduation degree required");
+    }
+} else {
+    console.log("Age is not valid");
+}
+
+// q10
+let present = prompt("Is the student present? (yes/no)");
+let internal = Number(prompt("Enter internal marks:"));
+let external = Number(prompt("Enter external marks:"));
+
+if (present == "yes") {
+    if (internal >= 30) {
+        if (external >= 35) {
+            console.log("Eligible for Final Exam");
+        } else {
+            console.log("External marks are less than 35");
+        }
+    } else {
+        console.log("Internal marks are less than 30");
+    }
+} else {
+    console.log("Student is absent");
+}
+
+
