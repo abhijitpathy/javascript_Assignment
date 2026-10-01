@@ -432,4 +432,500 @@ if (present == "yes") {
     console.log("Student is absent");
 }
 
+// nested if 
+// q1
+let numBer = 15;
 
+if (numBer > 10) {
+    if (numBer % 3 === 0) {
+        console.log("Number is greater than 10 and divisible by 3");
+    } else {
+        console.log("Number is greater than 10 but not divisible by 3");
+    }
+} else {
+    console.log("Number is not greater than 10");
+}
+// q2
+let age$ = 20;
+let voterId = true;
+
+if (age$ >= 18) {
+    if (voterId === true) {
+        console.log("Can Vote");
+    } else {
+        console.log("No Voter ID");
+    }
+} else {
+    console.log("Not eligible by age");
+}
+// q3
+let m$arks = 85;
+
+if (m$arks >= 40) {
+    if (m$arks >= 80) {
+        console.log("Passed with Distinction");
+    } else {
+        console.log("Passed");
+    }
+} else {
+    console.log("Failed");
+}
+// q4
+let correctPin = 1234;
+let enteredPin = 1234;
+let balance = 10000;
+let withdrawal = 5000;
+
+if (enteredPin === correctPin) {
+    if (balance >= withdrawal) {
+        balance = balance - withdrawal;
+        console.log("Withdrawal Successful");
+        console.log("Remaining Balance:", balance);
+    } else {
+        console.log("Insufficient Balance");
+    }
+} else {
+    console.log("Incorrect PIN");
+}
+// q5
+let year$ = 2024;
+
+if (yea$r % 4 === 0) {
+    if (year$ % 100 === 0) {
+        if (year$ % 400 === 0) {
+            console.log("Leap Year");
+        } else {
+            console.log("Not a Leap Year");
+        }
+    } else {
+        console.log("Leap Year");
+    }
+} else {
+    console.log("Not a Leap Year");
+}
+// q6
+let e$mail = "student@gmail.com";
+
+if (e$mail.includes("@")) {
+    if (e$mail.endsWith(".com")) {
+        if (e$mail.length > 10) {
+            console.log("Valid Email");
+        } else {
+            console.log("Email length is too short");
+        }
+    } else {
+        console.log("Email must end with .com");
+    }
+} else {
+    console.log("Email must contain @");
+}
+// q7
+let cartTotal = 1500;
+let premiumMember = true;
+let disco$unt;
+let finalAm$ount;
+
+if (cartTotal >= 1000) {
+    if (premiumMember === true) {
+        disco$unt = cartTotal * 0.20;
+    } else {
+        disco$unt = cartTotal * 0.10;
+    }
+
+    finalAm$ount = cartTotal - discount;
+
+    console.log("Discount:", disco$unt);
+    console.log("Final Amount:", finalAm$ount);
+} else {
+    console.log("No discount");
+    console.log("Final Amount:", cartTotal);
+}
+// q8
+let numbe$r = 16;
+
+if (numbe$r > 0) {
+    if (numbe$r % 2 === 0) {
+        if (numbe$r % 4 === 0) {
+            console.log("Positive Even and Divisible by 4");
+        } else {
+            console.log("Positive Even but not Divisible by 4");
+        }
+    } else {
+        console.log("Positive but Odd");
+    }
+} else {
+    console.log("Number is not Positive");
+}
+// q9
+let $age = 25;
+let graduation = true;
+let ex$perience = 3;
+
+if ($age >= 21 && $age <= 30) {
+    if (graduation === true) {
+        if (ex$perience >= 2) {
+            console.log("Eligible for Interview");
+        } else {
+            console.log("Not enough experience");
+        }
+    } else {
+        console.log("Graduation degree required");
+    }
+} else {
+    console.log("Age is not valid");
+}
+// q10
+let presen$t = true;
+let internalMarks = 35;
+let externalMarks = 40;
+
+if (presen$t === true) {
+    if (internalMarks >= 30) {
+        if (externalMarks >= 35) {
+            console.log("Eligible for Final Exam");
+        } else {
+            console.log("External marks are insufficient");
+        }
+    } else {
+        console.log("Internal marks are insufficient");
+    }
+} else {
+    console.log("Student is not present");
+}
+// switch
+// q1
+let mont$h = 2;
+
+switch (mont$h) {
+    case 1:
+        console.log("31 days");
+        break;
+    case 2:
+        console.log("28 days");
+        break;
+    case 3:
+        console.log("31 days");
+        break;
+    case 4:
+        console.log("30 days");
+        break;
+    case 5:
+        console.log("31 days");
+        break;
+    case 6:
+        console.log("30 days");
+        break;
+    case 7:
+        console.log("31 days");
+        break;
+    case 8:
+        console.log("31 days");
+        break;
+    case 9:
+        console.log("30 days");
+        break;
+    case 10:
+        console.log("31 days");
+        break;
+    case 11:
+        console.log("30 days");
+        break;
+    case 12:
+        console.log("31 days");
+        break;
+    default:
+        console.log("Invalid month");
+}
+
+// q2
+let chr = "a";
+
+switch (chr.toLowerCase()) {
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        console.log("Vowel");
+        break;
+    default:
+        console.log("Consonant");
+}
+// q3
+let number$ = 2;
+
+switch (number$) {
+    case 1:
+    case 2:
+        console.log("Winter");
+        break;
+
+    case 3:
+    case 4:
+        console.log("Summer");
+        break;
+
+    default:
+        console.log("Invalid number");
+}
+// q4
+let mar$ks = 72;
+
+switch (true) {
+    case marks >= 75:
+        console.log("Distinction");
+        break;
+
+    case mar$ks >= 60:
+        console.log("1st class");
+        break;
+
+    case mar$ks >= 50:
+        console.log("2nd class");
+        break;
+
+    case mar$ks >= 35:
+        console.log("3rd class");
+        break;
+
+    default:
+        console.log("Failed");
+}
+// q5
+let role = "admin";
+let action = "edit";
+
+switch (role) {
+    case "admin":
+        switch (action) {
+            case "create":
+                console.log("Create permission granted");
+                break;
+
+            case "edit":
+                console.log("Edit permission granted");
+                break;
+
+            case "delete":
+                console.log("Delete permission granted");
+                break;
+
+            default:
+                console.log("Invalid action");
+        }
+        break;
+
+    case "user":
+        console.log("Limited Access");
+        break;
+
+    default:
+        console.log("Invalid role");
+}
+// q6
+let fruit = "mango";
+
+switch (fruit) {
+    case "apple":
+        console.log("Apple is red");
+        break;
+
+    case "mango":
+        console.log("Mango is yellow");
+        break;
+
+    case "banana":
+        console.log("Banana is yellow");
+        break;
+
+    default:
+        console.log("Unknown fruit");
+        break;
+}
+// q7
+let value = "0";
+
+switch (value) {
+    case 0:
+        console.log("Number zero");
+        break;
+
+    case "0":
+        console.log("String zero");
+        break;
+
+    case false:
+        console.log("Boolean false");
+        break;
+
+    case null:
+        console.log("Null");
+        break;
+
+    case undefined:
+        console.log("Undefined");
+        break;
+
+    default:
+        console.log("Something else");
+}
+// q8
+let x = 10;
+let z = 3;
+let operator = "%";
+
+switch (operator) {
+    case "+":
+        console.log(x + z);
+        break;
+
+    case "-":
+        console.log(x - z);
+        break;
+
+    case "*":
+        console.log(x * z);
+        break;
+
+    case "/":
+        if (z === 0) {
+            console.log("Cannot divide by zero");
+        } else {
+            console.log(x / z);
+        }
+        break;
+
+    case "%":
+        if (z === 0) {
+            console.log("Cannot find remainder with zero");
+        } else {
+            console.log(x % z);
+        }
+        break;
+
+    case "**":
+        console.log(x ** z);
+        break;
+
+    default:
+        console.log("Invalid operator");
+}
+// q9
+let d$ay = 15;
+
+switch (true) {
+    case d$ay >= 1 && d$ay <= 10:
+        console.log("Beginning of the month");
+        break;
+
+    case d$ay >= 11 && d$ay <= 20:
+        console.log("Middle of the month");
+        break;
+
+    case d$ay >= 21 && d$ay <= 31:
+        console.log("End of the month");
+        break;
+
+    default:
+        console.log("Invalid day");
+}
+// q10
+let category = "nonveg";
+let item = "chicken";
+let size = "half";
+
+let price;
+
+switch (category) {
+
+    case "veg":
+
+        switch (item) {
+            case "paneer":
+
+                switch (size) {
+                    case "half":
+                        price = 120;
+                        console.log("Category: Veg");
+                        console.log("Item: Paneer");
+                        console.log("Size: Half");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    case "full":
+                        price = 220;
+                        console.log("Category: Veg");
+                        console.log("Item: Paneer");
+                        console.log("Size: Full");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+                break;
+
+            case "pizza":
+
+                switch (size) {
+                    case "half":
+                        price = 150;
+                        console.log("Category: Veg");
+                        console.log("Item: Pizza");
+                        console.log("Size: Half");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    case "full":
+                        price = 280;
+                        console.log("Category: Veg");
+                        console.log("Item: Pizza");
+                        console.log("Size: Full");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+                break;
+
+            default:
+                console.log("Invalid veg item");
+        }
+        break;
+
+    case "nonveg":
+
+        switch (item) {
+            case "chicken":
+
+                switch (size) {
+                    case "half":
+                        price = 180;
+                        console.log("Category: Non-Veg");
+                        console.log("Item: Chicken");
+                        console.log("Size: Half");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    case "full":
+                        price = 320;
+                        console.log("Category: Non-Veg");
+                        console.log("Item: Chicken");
+                        console.log("Size: Full");
+                        console.log("Price: ₹" + price);
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+                break;
+
+            default:
+                console.log("Invalid non-veg item");
+        }
+        break;
+
+    default:
+        console.log("Invalid category");
+}
