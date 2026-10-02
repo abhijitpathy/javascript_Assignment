@@ -769,3 +769,111 @@ switch (category) {
     default:
         console.log("Invalid category");
 }
+// terniary conditionals
+// 1. Divisible by 7
+let numbEr = 21;
+
+let resu$lt = num % 7 === 0
+    ? "Divisible by 7"
+    : "Not Divisible by 7";
+
+console.log(resu$lt);
+// 2. Temperature
+let temperature = 32;
+
+let res$ult = temperature >= 30
+    ? "Hot Day"
+    : "Pleasant Day";
+
+console.log(res$ult);
+// 3. Empty string
+let string = "";
+
+let r$esult = string === ""
+    ? "Empty String"
+    : "String has content";
+
+console.log(r$esult);
+// 4. Age classification
+let age$ = 16;
+
+let resul$t = age$ < 13
+    ? "Child"
+    : age <= 19
+        ? "Teenager"
+        : "Adult";
+
+console.log(resul$t);
+// 5. Greatest of three numbers
+let k = 25;
+let j = 40;
+let c = 30;
+
+let greatest = a > b
+    ? (k > c ? k : c)
+    : (j > c ? j : c);
+
+console.log(greatest);
+// 6. Student marks
+let marks$ = 68;
+
+let resuLt = marks$ >= 75
+    ? "Distinction"
+    : marks$ >= 60
+        ? "First Class"
+        : marks$ >= 50
+            ? "Second Class"
+            : marks$ >= 35
+                ? "Pass"
+                : "Fail";
+
+console.log(resuLt);
+// 7. Positive/Negative + Even/Odd
+let numbeR = -7;
+
+let resulT = numbeR === 0
+    ? "Zero"
+    : numbeR > 0
+        ? (numbeR % 2 === 0 ? "Positive Even" : "Positive Odd")
+        : (numbeR % 2 === 0 ? "Negative Even" : "Negative Odd");
+
+console.log(resulT);
+// 8. Leap year
+let yeAr = 2024;
+
+let resUlt = yeAr % 4 === 0
+    ? (yeAr % 100 !== 0
+        ? "Leap Year"
+        : (yeAr % 400 === 0 ? "Leap Year" : "Not a Leap Year"))
+    : "Not a Leap Year";
+
+console.log(resUlt);
+// 9. Role and action
+let rol$e = "admin";
+let act$ion = "edit";
+
+let reSult = rol$e === "admin"
+    ? (act$ion === "delete"
+        ? "Admin Delete"
+        : act$ion === "edit"
+            ? "Admin Edit"
+            : "Admin Other")
+    : rol$e === "user"
+        ? (act$ion === "view"
+            ? "User View"
+            : "User Restricted")
+        : "Invalid Role";
+
+console.log(reSult);
+// 10. Discount + final amount
+let cartTotal = 6000;
+
+let result = cartTotal >= 5000
+    ? { discount: "20%", finalAmount: cartTotal * 0.80 }
+    : cartTotal >= 2000
+        ? { discount: "10%", finalAmount: cartTotal * 0.90 }
+        : cartTotal >= 1000
+            ? { discount: "5%", finalAmount: cartTotal * 0.95 }
+            : { discount: "0%", finalAmount: cartTotal };
+
+console.log(result);
