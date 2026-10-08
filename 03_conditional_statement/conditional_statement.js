@@ -877,3 +877,5 @@ let result = cartTotal >= 5000
             : { discount: "0%", finalAmount: cartTotal };
 
 console.log(result);
+
+
