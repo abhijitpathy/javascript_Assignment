@@ -134,7 +134,7 @@ console.log("Average:", average);
 console.log("Above average:", aboveAverage);
 
 // 10. Decimal to binary without toString(2)
-let num = 25;
+let num = 99;
 let binary = "";
 
 for (; num > 0; num = Math.floor(num / 2)) {
