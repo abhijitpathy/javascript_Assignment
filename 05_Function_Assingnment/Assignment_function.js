@@ -179,3 +179,82 @@ function calculateGrade(a){
 }
 console.log(calculateGrade(88))
 
+// 17
+function calculateFinalPrice(price, discountPercent) {
+    let finalPrice = price - (price * discountPercent / 100);
+    return finalPrice;
+}
+
+console.log(calculateFinalPrice(2500, 15));
+console.log(calculateFinalPrice(1200, 10));
+
+// 18
+const celsiusToFahrenheit = function(c) {
+    return (c * 9 / 5) + 32;
+};
+
+const fahrenheitToCelsius = function(f) {
+    return (f - 32) * 5 / 9;
+};
+
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(25));
+
+console.log(fahrenheitToCelsius(32));
+console.log(fahrenheitToCelsius(98.6));
+// 19
+// No. A function expression cannot be called before it is defined because it is stored in a variable, and the variable cannot be accessed before initialization when using const or let.
+
+function calculateTotal(price, quantity) {
+    function getTotal() {
+        return price * quantity;
+    }
+
+    return getTotal();
+}
+
+console.log(calculateTotal(100, 3));
+console.log(calculateTotal(250, 2));
+
+// 20
+function processStudent(name, m1, m2, m3) {
+    function calculate() {
+        let total = m1 + m2 + m3;
+        let average = total / 3;
+        return { total, average };
+    }
+
+    let result = calculate();
+    let status;
+
+    if (m1 >= 35 && m2 >= 35 && m3 >= 35) {
+        status = "Pass";
+    } else {
+        status = "Fail";
+    }
+
+    return `Name: ${name}
+Total: ${result.total}
+Average: ${result.average.toFixed(2)}
+Status: ${status}`;
+}
+
+function compareAverages(avg1, avg2) {
+    if (avg1 > avg2) {
+        return "First average is higher";
+    } else if (avg2 > avg1) {
+        return "Second average is higher";
+    } else {
+        return "Both averages are equal";
+    }
+}
+
+let student1 = processStudent("Rahul", 80, 75, 90);
+let student2 = processStudent("Priya", 60, 70, 65);
+let student3 = processStudent("Amit", 30, 80, 90);
+
+console.log(student1);
+console.log(student2);
+console.log(student3);
+
+console.log(compareAverages(81.67, 65));
