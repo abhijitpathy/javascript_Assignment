@@ -94,3 +94,15 @@ marks[1] = 95;
 //5  Can you update a value at an index that is currently outside the bounds of the array? What happens if you assign a value to a much higher index?
 
 // Yes, you can. If you assign a value to an index higher than the current maximum index, JavaScript will automatically expand the array, fill the intervening empty slots with empty items (which evaluate to undefined), and update the array's length property to accommodate the new index plus one.
+
+// 5 Array lenght 
+
+//1  lenght
+
+//2  4
+
+//3 undefiend
+
+//4 Becuase in array the items are in index from 0 , and lenght check those indexes and calculate how many items are in array through the index
+
+// lenght is a property , it is directly access as arr.length 
