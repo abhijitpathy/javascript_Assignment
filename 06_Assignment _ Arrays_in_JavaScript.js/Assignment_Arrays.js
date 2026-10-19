@@ -106,3 +106,20 @@ marks[1] = 95;
 //4 Becuase in array the items are in index from 0 , and lenght check those indexes and calculate how many items are in array through the index
 
 // lenght is a property , it is directly access as arr.length 
+
+// 6. Looping Through Arrays
+
+// 1   THE TWO WAYS FOR LOOPING THROUGH ARRAYS ARE FOR ND WHILE LOOP
+
+// 2  THEE STANARD CONDITION IS I <= ARR.LENGHT-1
+
+// 3 IT IS WRITTEN AFTER PRINTING OF THE CODE IN ARR WHILE LOOP
+
+// 4 
+var students = ["Abhijit","alexa", "koby",]
+for(let i=0;i<students.length-1;i++){
+    console.log(students[i])
+}
+
+// 5 if it uses <= it doest skip the last index and says undefined because we have laten lenght-1 to prevent it from saying undefined
+
