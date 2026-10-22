@@ -68,8 +68,8 @@
 
 //5 Write a line of code to log the first element of an array named colors.
 
-JavaScript
-console.log(colors[0]);
+// JavaScript
+// console.log(colors[0]);
 
 // uploading values
 
@@ -80,7 +80,7 @@ console.log(colors[0]);
 //2  Given var marks = [80, 75, 90];, what code would you write to change the second element (75) to 95?
 
 // JavaScript
-marks[1] = 95;
+// marks[1] = 95;
 
 
 //3  After executing the update from the previous question, what will console.log(marks); output?
@@ -122,4 +122,83 @@ for(let i=0;i<students.length-1;i++){
 }
 
 // 5 if it uses <= it doest skip the last index and says undefined because we have laten lenght-1 to prevent it from saying undefined
+
+//6
+var students = ["jenil","Mahir","kalaua"]
+for(var student of students){
+    console.log(student)
+}
+// 7
+// the main advantage is that the redability of code increases and also no index management which will prevent error, it also gives direct access to the value of each element
+
+// 8
+// const colors = ["Red", "Blue", "Green"];
+// for (const color of colors) {
+//     console.log(color, indexOf(color))
+// }
+
+
+
+// 7 Adding elements to the Arrays
+// 1. push() is used to add an element at the end of the array
+// 2. unshift() is used to add an element at the start of the array
+
+// 3. 
+let nums = [1,2,3]
+nums.push(4)
+console.log(nums)
+
+// 4 
+nums.unshift(0)
+console.log(nums)
+
+// 5
+// yes both push() and unshift  modifies the array
+
+
+// 8 Removing Elements
+// 1. pop() methos removes the last element of ana array
+// 2. undefined
+// 3. 
+let n1ums = [100, 200, 300, 400, 500];
+n1ums.pop()
+// removes 500 from the array
+
+// 4.
+nums.shift()
+//  it removes 100 from the array
+
+// 5
+// No pop and shift only modifies the array, they dont return the removed element
+
+// 9 Searching in the array
+
+// 1.
+// it returns the position of the variable in the array
+// 2.
+// it returns undefined
+// 3.
+// -1, it returns
+// .4
+// undefined
+// 5
+const students = ["jenil","Mahir","kalaua","ranjan","hojit","priyesha"]
+console.log(students.indexOf("priyesha"))
+
+// 10 Array 
+// 1.
+// yes a javascript array can store difdferent dataa types inside the same array
+// 2.
+// Array with different data types
+let data = [22,"ojas",null,undefined,100n,[1,3],{}]
+console.log(data[data.length-2])
+
+// 3.
+//  we check data types of each element by the use of typeof in the array
+// 4.
+// int
+// 5.
+//  no it will return string 
+
+// 11 
 
