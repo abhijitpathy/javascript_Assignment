@@ -182,8 +182,8 @@ nums.shift()
 // .4
 // undefined
 // 5
-const students = ["jenil","Mahir","kalaua","ranjan","hojit","priyesha"]
-console.log(students.indexOf("priyesha"))
+// const students = ["jenil","Mahir","kalaua","ranjan","hojit","priyesha"]
+// console.log(students.indexOf("priyesha"))
 
 // 10 Array 
 // 1.
@@ -201,4 +201,230 @@ console.log(data[data.length-2])
 //  no it will return string 
 
 // 11 
+// 1.
+// A 2d array is generally used for making matrix 
+// 2.
+// 6
 
+// 3.
+let matr = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+console.log(matr[1][2])
+
+// 4
+const arr = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+];
+console.log(arr[2][2])
+// 5
+let mat = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
+for(let i = 0;i<4;i++){
+    console.log(mat[0][i])
+}
+
+// 6
+// 1. Create a 4x2 matrix (4 rows, 2 columns)
+const matrix1 = [
+  [10, 20], 
+  [30, 40], 
+  [50, 60], 
+  [70, 80]  
+];
+
+console.log("Elements of the second column:");
+
+for (let i = 0; i < matrix1.length; i++) {
+  console.log(matrix1[i][1]);
+}
+
+// 7
+const marks = [
+    [85, 90, 78],
+    [70, 75, 80],
+    [88, 82, 95],
+    [60, 65, 70]
+];
+for (let i = 0; i < marks.length; i++) {
+  console.log(marks[3][i]);
+}
+
+// 8
+// 1. Create a 3x4 matrix (3 rows, 4 columns)
+const matrix = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12]
+];
+
+let totalRows = matrix.length;
+let totalCols = matrix[0].length;
+let totalElements = totalRows * totalCols;
+
+console.log("Total Rows:", totalRows);
+console.log("Total Columns:", totalCols);
+console.log("Total Number of Elements:", totalElements);
+
+// 9
+const matr3 =[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+matr3[1][1] = 0;
+console.log(matr3);
+
+// 10
+const mart4 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for (let i = 0; i < mart4.length; i++) {
+    if (mart4[0][i] !== undefined) {
+        console.log("First row element:", mart4[0][i]);
+    }
+    console.log("First column element:", mart4[i][0]);
+}
+
+// 12
+// const marks = [
+//     [85, 90, 92], // Jenil
+//     [70, 75, 80], // Arjun
+//     [88, 82, 89]  // Krishna
+// ];
+
+// for (let i = 0; i < marks.length; i++) {
+//     const studentMarks = marks[i];
+//     const total = studentMarks[0] + studentMarks[1] + studentMarks[2];
+//     const avg = total / 3;
+//     console.log("Student " + (i + 1) + " average: " + avg);
+// }
+
+// 1.
+// Mark i represents the index no of the matrix
+// 2.
+// marks.lenght gives directly the lenght of the matirx
+// 3.
+// if one student have only 2 subjects then also the average total no of subjects will not be changed as it is same for all the students  and also the other subject's marks will be regardered as 0
+
+// 13
+// 1.
+// undefined
+// 2.
+// this code is considered wrong because it is taking one lenght more than the lenght of the array and printing its value
+// 3.
+let arr4 = [10, 20, 30];
+arr[arr4.length-1] = 40;
+
+
+// 14
+// 1
+const numbers = [12, 7, 18, 25, 4, 9, 30];
+for(let i =0;i<7;i++){
+    if(i % 2 ==0){
+        console.log(numbers[i])
+    }
+}
+// 2.
+const cities = ["Ahmedabad", "Surat", "Rajkot", "Vadodara", "Bhavnagar"];
+for(let i=5;i>=0;i--){
+    console.log(cities[i])
+}
+
+// 3
+const scores = [12, 45, 7, 89, 23];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let i = 0; i < scores.length; i++) {
+  let current = scores[i];
+  
+  if (current > largest) {
+    secondLargest = largest;
+    largest = current;
+  } else if (current > secondLargest && current !== largest) {
+    secondLargest = current;
+  }
+}
+
+console.log("Array:", scores);
+console.log("Second Largest Number:", secondLargest);
+
+// 4
+const colors = ["Red", "Blue", "Green", "Yellow"];
+colors.push("purple")
+colors.unshift("black")
+console.log(colors)
+
+// 5
+const matrix4 = [
+    [10, 20, 30],
+    [40, 50, 60]
+];
+
+let sum = 0;
+
+for (let i = 0; i < matrix4.length; i++) {
+    for (let j = 0; j < matrix4[i].length; j++) {
+        sum += matrix4[i][j];
+    }
+}
+
+console.log("Matrix:", matrix4);
+console.log("Sum of all elements:", sum);
+
+//6
+const marks5 = [45, 67, 89, 32, 76, 91, 54];
+let count=0;
+for(let i = 0;i<marks5.length-1;i++){
+    if(i>50){
+        count+=1
+    }
+    console.log(count)
+}
+
+// 7
+const matrix5 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log("Main diagonal elements:");
+for (let i = 0; i < matrix5.length; i++) {
+    console.log(matrix5[i][i]);
+}
+
+// 15
+// 1.
+// 20
+
+// 2.
+// c> arr.unshift(5)
+
+// 3.
+// undefined
+
+// 4.
+// c array can store multiple values
+
+// 5
+// b [1,2,4]
+
+// 6
+// d 60
+
+// 7
+// b string
+
+//16
