@@ -427,4 +427,199 @@ for (let i = 0; i < matrix5.length; i++) {
 // 7
 // b string
 
-//16
+//16 A
+const cart = [
+    ["Laptop", 45000, 1],
+    ["Mouse", 800, 2],
+    ["Keyboard", 1500, 1],
+    ["Headphones", 2500, 1]
+];
+
+let grandTotal = 0;
+
+for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    const name = item[0];
+    const price = item[1];
+    const quantity = item[2];
+
+
+    const itemTotal = price * quantity;
+
+
+    grandTotal += itemTotal;
+
+    console.log("Product: " + name);
+    console.log("Price: " + price);
+    console.log("Quantity: " + quantity);
+    console.log("Item Total: " + itemTotal);
+    console.log("------------------------");
+}
+
+
+console.log("Grand Total: " + grandTotal);
+
+if (grandTotal > 50000) {
+    const discount = grandTotal * 0.10;
+    const finalAmount = grandTotal - discount;
+    console.log("Discount Applied: 10%");
+    console.log("Final Payable Amount: " + finalAmount);
+}
+
+// 16 b
+const attendance = [
+    ["Jenil", ["P", "P", "A", "P", "P"]],
+    ["Mahir", ["P", "A", "P", "P", "A"]],
+    ["Yashvi", ["P", "P", "P", "P", "P"]],
+    ["Arjun", ["A", "A", "P", "P", "A"]]
+];
+
+let highestAttendance = -1;
+let topStudent = "";
+
+for (let i = 0; i < attendance.length; i++) {
+    const student = attendance[i];
+    const name = student[0];
+    const records = student[1];
+
+    let presentCount = 0;
+    let absentCount = 0;
+
+    for (let j = 0; j < records.length; j++) {
+        if (records[j] === "P") {
+            presentCount++;
+        } else if (records[j] === "A") {
+            absentCount++;
+        }
+    }
+
+    const totalDays = records.length;
+    const percentage = (presentCount / totalDays) * 100;
+
+    // 5. Status rule
+    let status = "";
+    if (percentage >= 75) {
+        status = "Good";
+    } else {
+        status = "Low Attendance";
+    }
+
+    console.log("Name: " + name);
+    console.log("Present: " + presentCount);
+    console.log("Absent: " + absentCount);
+    console.log("Attendance: " + percentage + "%");
+    console.log("Status: " + status);
+
+    if (percentage > highestAttendance) {
+        highestAttendance = percentage;
+        topStudent = name;
+    }
+}
+
+// Print the bonus result
+console.log("Student with Highest Attendance: " + topStudent + " (" + highestAttendance + "%)");
+
+// 16 c
+const movies = [
+    ["Inception", [9, 8, 9, 10, 8]],
+    ["Avatar", [7, 8, 7, 6, 8]],
+    ["Interstellar", [10, 9, 9, 10, 9]],
+    ["Joker", [8, 7, 8, 9, 8]]
+];
+
+let highestAvg = -1;
+let topMovie = "";
+
+
+for (let i = 0; i < movies.length; i++) {
+    const movie = movies[i];
+    const title = movie[0];
+    const ratings = movie[1];
+
+    let sum = 0;
+
+
+    for (let j = 0; j < ratings.length; j++) {
+        sum += ratings[j];
+    }
+
+    
+    const average = sum / ratings.length;
+
+    let verdict = "";
+    if (average >= 9) {
+        verdict = "Excellent";
+    } else if (average >= 7 && average < 9) {
+        verdict = "Good";
+    } else {
+        verdict = "Average";
+    }
+
+    console.log("Movie: " + title);
+    console.log("Ratings: " + ratings.join(" "));
+    console.log("Average Rating: " + average.toFixed(1));
+    console.log("Verdict: " + verdict);
+    console.log("------------------------");
+
+
+    if (average > highestAvg) {
+        highestAvg = average;
+        topMovie = title;
+    }
+}
+
+
+console.log(" Movie with Highest Average Rating: " + topMovie + " (" + highestAvg.toFixed(1) + ")");
+
+// 16 D
+const temperatures = [
+    ["Monday", 32],
+    ["Tuesday", 35],
+    ["Wednesday", 30],
+    ["Thursday", 28],
+    ["Friday", 33],
+    ["Saturday", 36],
+    ["Sunday", 31]
+];
+
+let sum1 = 0;
+let highestTemp = temperatures[0][1];
+let highestDay = temperatures[0][0];
+
+let lowestTemp = temperatures[0][1];
+let lowestDay = temperatures[0][0];
+
+console.log("--- Daily Temperatures & Heat Alerts ---");
+
+for (let i = 0; i < temperatures.length; i++) {
+    const day = temperatures[i][0];
+    const temp = temperatures[i][1];
+
+
+    console.log(day + ": " + temp + "°C");
+
+
+    sum1 += temp;
+
+
+    if (temp > highestTemp) {
+        highestTemp = temp;
+        highestDay = day;
+    }
+
+    if (temp < lowestTemp) {
+        lowestTemp = temp;
+        lowestDay = day;
+    }
+
+    if (temp >= 35) {
+        console.log("Heat Alert on " + day);
+    }
+}
+
+
+const averageTemp = sum / temperatures.length;
+
+console.log("Highest Temperature: " + highestTemp + "°C on " + highestDay);
+console.log("Lowest Temperature: " + lowestTemp + "°C on " + lowestDay);
+console.log("Average Temperature of the Week: " + averageTemp.toFixed(1) + "°C");
