@@ -169,3 +169,233 @@ const student3 = new Student("Rohan", 3, "B");
 const students = [student1, student2, student3];
 
 console.log(students);
+
+
+// sec 4 
+// 1
+var student ={
+}
+student.name = "Abhi"
+student.age =12
+console.log(student)
+
+// 2
+student["full name "] = "Abhijit pathy"
+console.log(student)
+
+//3
+var person ={
+  name : "Abhijit",
+  age :19
+} 
+console.log(person.age)
+// 4
+var person ={
+  name:"Abhijit",
+  age:20,
+  isStudent:true,
+  gender:"male",
+  city:"behrampur"
+}
+console.log(person.name) 
+console.log(person.age) 
+console.log(person.isStudent) 
+console.log(person.gender) 
+console.log(person.city) 
+
+// 5
+var person ={
+  name:"Abhijit",
+  age:20
+}
+console.log(person.name)
+// console.log(age)  thats why it shows here beacause it shows that age is not defined
+
+// sec 5 Adding new properties
+// 1 
+let fruit = {
+  name : "Mango",
+  age: 13,
+}
+fruit.availability = "summer"
+console.log(fruit)
+
+// 2
+var person = {
+  name : "Abhijit",
+  age: 18,
+  "full name" : "Abhijit parth"
+}
+person["full name"] = "Abhijit pathy"
+console.log(person)
+
+// 3
+var student={
+
+}
+student.name = "Abhi"
+student.age = 18
+student.year = 1
+console.log(student)
+
+// 4
+var student = {
+  name : "archit",
+  "full name":"Abhijit vaishnav"
+}
+// 5
+var student = {
+}
+student.name= "Abhi"
+student["course"] = "java Script"
+console.log(student) 
+
+// sec 6 updating property values
+// 1
+var student = {
+  name : "Abhi",
+  age : 13
+}
+student.age = 19
+console.log(student)
+
+// 2
+student["name"] = "Akash"
+student.age = 24
+console.log(student)
+
+// 3
+var country = {
+  name : "United states of America",
+  age : 250
+}
+console.log(country)
+country.name = "India"
+country.age = 79
+console.log(country)
+
+// 4
+var student = {
+  name : "Abhi",
+  age : 13
+}
+student.age = "13"
+console.log(student)
+// 5
+var product = {
+  name :"milton",
+  price:1200
+}
+product.name = "Aqua steel"
+console.log(product)
+
+// sec 7
+// 1
+var student = {
+  name : "Abhi",
+  age : 13
+}
+delete student.name
+console.log(student)
+// 2
+delete student.class
+console.log(student)
+// it prints the original object
+
+// 3
+var student = {
+  name : "Abhi",
+  age : 13,
+  class:8,
+  gender :"Male"
+
+}
+console.log(student)
+delete student.name
+delete student.gender
+console.log(student)
+
+// 4
+var student = {
+  name : "Abhi",
+  age : 13,
+  class:8,
+  gender :"Male"
+
+}
+delete student.age
+console.log(student)
+// 5
+console.log(student.age) 
+// as we know if there is no defined value of a variable it always shows undefined
+
+// sec 8
+// 1
+var student = {
+    name:"Alex",
+    rollNumber:23345,
+    isStudent:true,
+    marks :[89,78,90],
+}
+console.log(student)
+
+// 2
+var student = {
+    name:"Alex",
+    rollNumber:23345,
+    isStudent:true,
+    marks :[89,78,90],
+    address :{
+        houseNo:123,
+        city:"kalol",
+        pin:68422
+    },
+}
+// 3
+var product = {
+    name:"milton",
+    price:2334,
+    isMetal:true,
+    color :["black","white"],
+    manufacturer:{
+        houseNo:123,
+        city:"kalol",
+        pin:68422
+      },
+}
+console.log(product)
+// 4
+var student = {
+    name:"Alex",
+    rollNumber:23345,
+    isStudent:true,
+    marks :[89,78,90],
+    address :{
+        houseNo:123,
+        city:"kalol",
+        pin:68422
+
+    },
+    greet : function (){
+        return " Hello"
+    }
+}
+// 5
+var student = {
+    name:"Alex",
+    rollNumber:23345,
+    isStudent:true,
+    marks :[89,78,90],
+    address :{
+        houseNo:123,
+        city:"kalol",
+        pin:68422
+
+    },
+    greet : function (){
+        return " Hello"
+    }
+}
+console.log(student)
+console.log(student.name)
+console.log(student.marks)
