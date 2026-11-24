@@ -399,3 +399,120 @@ var student = {
 console.log(student)
 console.log(student.name)
 console.log(student.marks)
+
+// sec 9
+// 1
+var person = {
+    name : "Abhi",
+    age:22,
+    greet: function(){
+        return "helo,I am " + this.name;
+    }
+}
+console.log(person.greet())
+// 2
+var student ={
+  name:"Abhi",
+  marks:92,
+  getInfo : function(){
+    return this.name +"marks obtained =>" + this.marks
+  }
+}
+console.log(student.getInfo())
+// 3
+console.log(student.getInfo())
+// 4
+var student ={
+  name:"Abhi",
+  marks:92,
+  getInfo : function(){
+    return this.marks>=40
+  }
+}
+console.log(student.getInfo())
+// 5
+var person ={
+  firstName:"alok",
+  lastName:"singh",
+  age:28,
+  fullname : function(){
+    return this.firstName + " "+ this.lastName
+  },
+  isAdult : function(){
+    return this.age>=18
+  }
+}
+console.log(person.fullname(),person.isAdult())
+
+// sec 10
+// 1
+for(let keys in person){
+  console.log(keys)
+}
+// 2
+for(let key in person){
+  console.log(person[key])
+}
+// 3
+for(let key in person){
+  console.log(key +":"+person[key])
+}
+// 4
+let count = 0;
+for(let key in person){
+  count++
+}
+console.log(count)
+// 5
+const obj = {
+  name: "John",
+  age: 25,
+  city: "New York",
+  marks: 90,
+  isStudent: true
+};
+
+for (let key in obj) {
+  if (typeof obj[key] === "number") {
+    console.log(key + ": " + obj[key]);
+  }
+}
+
+// 11
+// 1
+var student={
+  address:{
+    city:"kalol",
+    pincode:56348
+  }
+}
+console.log(student.address)
+// 2
+console.log(student.address.city)
+// 3
+let company ={
+    address:{
+        city : "hyderabasd",
+        pincode: 23141
+    },
+    employess:["harus","obama","rakul"]
+}
+console.log(company)
+// 4
+for(let key in company.address){
+  console.log(key +"=>"+ company.address[key])
+}
+// 5
+let address ={
+    India:{
+        state:{
+          city:"Hyderabad"
+        }
+    },
+}
+console.log(address.India.state)
+
+// sec 12
+// 1
+
+
