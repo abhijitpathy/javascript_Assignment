@@ -514,5 +514,127 @@ console.log(address.India.state)
 
 // sec 12
 // 1
+var student =[
+  {name:"Abhi"},
+  {name:"Ankhor"},
+  {name:"Akrosh"}
+]
+console.log(student[0])
+// 2
+for(let i = 0;i<=student.length-1;i++){
+  console.log(student[i].name)
+}
+// 3
+var products=[
+  {name:"lenevo log 5080"},
+  {name:"spoon"},
+  {name:"iphone 15 pro"}
+]
+for(let i = 0;i<=products.length-1;i++){
+  console.log(products[i].name)}
+// 4
+var student =[
+  {name:"abhi",marks:98},
+  {name:"Badal",marks:99},
+  {name:"aroshi",marks:83}
+]
+for(let i = 0;i<=student.length-1;i++){
+    if(student[i].marks>highest){
+        highest = student[i].marks
+        topper = student[i].name
+    }
+} 
+console.log(topper)
+// 5
 
+
+
+
+
+
+
+
+
+
+
+// 13 obj vs Arrays
+// 1
+// the object is a correct choice when we need to store entities in it 
+// example storing information of employees in a company
+// 2
+// the array is a correct choice where you need to store a collection of list such as names of student 
+// 3
+var book={
+    name:"HArry potter and chamber of secret",
+    pages:576
+}
+var books = [
+    {name:"last of us"},
+    {name:"big foot"},
+    {name:"power of subconciuous mind"}
+]
+console.log(book)
+console.log(books)
+// 4
+// the difference between arr and object is 
+// Array vs object
+// 1.structure=>
+// obj => key value pair;{key:value}
+// arr => ordered list ; let arr =[123]
+// 2.Acess of an else = >
+// obj => via key (using dot or bracket notation)
+
+// var obj ={
+//     name:osama
+// }
+// // arr => via index
+// const arr =[1,2,3]
+// arr[2]
+
+// 3.suitable for :
+// obj => to store single or  multiple entity (students,employee, product)
+// const student = {
+//     name: "Ananya",
+//     age: 18,
+//     course: "CSE"
+// };
+// arr => to store the collection of objects (name,color), it can even store entity 
+// const name = ["abhi","raut","rakuten"]
+// var students =[
+//     {name:"ABhi",marks:93},
+//     {name:"shane",marks:94},
+//     {name:"sataya",marks:97},
+//     {name:"pataya",marks:91}
+// ]
+
+// 5
+var students1 =["rakesh","Alama","kankresh"
+]
+var students1 = {
+  name:"rakesh",
+  age:"24",
+}
+// here in this example if we need to list only students name then we can use arr whereas to write specification of the entity(student) so here object is used
+
+// 14 checking properties & getting keys/value
+// 1 
+console.log("name" in students1)
+// 2
+console.log(Object.keys(students1))
+// 3
+console.log(Object.values(students1))
+console.log(Object.entries(students1))
+// 4
+var object = { name: "Alice" };
+
+console.log(object?.age ?? "Not found");
+
+// 5
+var person = {
+  name: "Alice",
+  age: 25,
+  city: "New York"
+};
+
+console.log(Object.keys(person).length);
 
