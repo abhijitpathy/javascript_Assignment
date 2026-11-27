@@ -638,3 +638,234 @@ var person = {
 
 console.log(Object.keys(person).length);
 
+// Section 15: Complete Example
+// 1. Create a student object with a scores array and a method that returns the total of all scores.
+let student = {
+    name: "Rahul",
+    scores: [80, 90, 75, 85],
+
+    getTotal: function() {
+        let total = 0;
+
+        for (let score of this.scores) {
+            total += score;
+        }
+
+        return total;
+    }
+};
+
+console.log("Total:", student.getTotal());
+
+
+
+// 2. Modify the getAverage method so that it works for any number of scores.
+let student = {
+    name: "Rahul",
+    scores: [80, 90, 75, 85],
+
+    getAverage: function() {
+        let total = 0;
+
+        for (let score of this.scores) {
+            total += score;
+        }
+
+        return total / this.scores.length;
+    }
+};
+
+console.log("Average:", student.getAverage());
+
+
+// 3. Create an object with a method that returns both total and average of marks.
+let student = {
+    name: "Priya",
+    marks: [85, 90, 80, 95],
+
+    getResult: function() {
+        let total = 0;
+
+        for (let mark of this.marks) {
+            total += mark;
+        }
+
+        let average = total / this.marks.length;
+
+        return {
+            total: total,
+            average: average
+        };
+    }
+};
+
+console.log(student.getResult());
+
+
+// 4. Write a method that returns the highest score from the scores array using this.
+let student = {
+    name: "Amit",
+    scores: [75, 90, 85, 95, 80],
+
+    getHighest: function() {
+        return Math.max(...this.scores);
+    }
+};
+
+console.log("Highest Score:", student.getHighest());
+
+
+// 5. Create a student object with name, scores array, and two methods: one for average and one for grade (A/B/C based on average).
+let student = {
+    name: "Rahul",
+    scores: [85, 90, 80, 95],
+
+    getAverage: function() {
+        let total = 0;
+
+        for (let score of this.scores) {
+            total += score;
+        }
+
+        return total / this.scores.length;
+    },
+
+    getGrade: function() {
+        let average = this.getAverage();
+
+        if (average >= 80) {
+            return "A";
+        } 
+        else if (average >= 60) {
+            return "B";
+        } 
+        else {
+            return "C";
+        }
+    }
+};
+
+console.log("Name:", student.name);
+console.log("Average:", student.getAverage());
+console.log("Grade:", student.getGrade());
+
+
+// Section 16: Common Mistakes
+// 1. Show the wrong and correct way of accessing a property when the key is stored in a variable.
+// Wrong Way:
+// let student = {
+//     name: "Rahul",
+//     age: 20
+// };
+
+// let key = "name";
+
+// console.log(student.key);
+
+let student = {
+    name: "Rahul",
+    age: 20
+};
+
+let key1 = "name";
+
+console.log(student[key1]);
+
+
+// 2. Create an object that has a property with a space in its key and access it correctly.
+let student = {
+    name: "Rahul",
+    "full address": "Ahmedabad, Gujarat"
+};
+
+console.log(student["full address"]);
+
+
+// 3. Explain why we should not depend on the order of properties in an object. Give a short example.
+let student = {
+    name: "Rahul",
+    age: 20,
+    city: "Ahmedabad"
+};
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.city);
+
+
+// 4. Write code that incorrectly uses this and then correct it.
+// Wrong Way:
+// let student = {
+//     name: "Rahul",
+
+//     showName: function() {
+//         console.log(this);
+//         console.log(name);
+//     }
+// };
+
+// student.showName();
+
+// Correct Way:
+let student = {
+    name: "Rahul",
+
+    showName: function() {
+        console.log(this.name);
+    }
+};
+
+student.showName();
+
+
+
+// 5. Identify and fix three common mistakes in a given incorrect object-related code snippet.
+// Incorrect Code:
+// let student = {
+//     name: "Rahul",
+//     age: 20,
+//     marks: [80, 90, 85],
+
+//     getTotal: function() {
+//         let total = 0;
+
+//         for (let mark of marks) {
+//             total += mark;
+//         }
+
+//         return total;
+//     }
+// };
+
+// let key = "name";
+
+// console.log(student.key);
+// console.log(student.getTotal);
+
+
+// Correct Code:
+let student = {
+    name: "Rahul",
+    age: 20,
+    marks: [80, 90, 85],
+
+    getTotal: function() {
+        let total = 0;
+
+        for (let mark of this.marks) {
+            total += mark;
+        }
+
+        return total;
+    }
+};
+
+let key = "name";
+
+console.log(student[key]);
+console.log(student.getTotal());
+
+Output:
+Rahul
+255
+
